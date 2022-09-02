@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/luminous/public_html/
+    - /bin/rm $DEPLOYPATH/*
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R thrive $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
